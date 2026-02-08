@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  border: 1px solid white;
+  margin: 140px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
+  padding: 80px 0px;
+  font-size: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  width: 120px;
+  height: 35px;
+  border-radius: 15px;
+}
+
+.decreament {
+  color: red;
+  font-size: 35px;
+  border: 3px solid red;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decreament:hover {
+  color: yellow;
+  border: 3px solid yellow;
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.6);
+  transition: all 0.4s ease;
+}
+
+.decreament:active {
+  color: red;
+  border: 3px solid red;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+.increament {
+  color: green;
+  font-size: 30px;
+  border: 3px solid green;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.increament:hover {
+  color: yellow;
+  border: 3px solid yellow;
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.increament:active {
+  color: green;
+  border: 3px solid green;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+}
+
+.reset {
+  color: yellow;
+  font-size: 18px;
+  border: 3px solid yellow;
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset:hover {
+  color: red;
+  border: 3px solid red;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+  transition: all 0.4s ease;
+}
+
+.reset:active {
+  color: green;
+  border: 3px solid green;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+  transition: all 0.1s ease;
 }
